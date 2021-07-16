@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    width: 935px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    width: 614px;
+}
+
+.sidebar {
+    width: 293px;
+    height: 300px;
+    background-color: blue;
+    margin-top: 88px;
+}
+
+.barra-fixa {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: 1;
+}
+
+.barra-fixa .topo {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.barra-fixa .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    font-size: 20px;
+}
+
+.barra-fixa .logo .borda {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+
+.barra-fixa .pesquisa {
+    width: 215px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    color: #979797;
+    background-color: #FAFAFA;
+
+}
+
+.barra-fixa .opcoes {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    font-size: 25px;
+}
+
+.barra-mobile {
+    display: none;
+}
+
+.caixa-stories {
+    margin-top: 88px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    height: 118px;
+    width: 614px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.caixa-stories .story {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 17px;
+}
+
+.caixa-stories .story .perfil-story{
+    position: absolute;
+    top: 4px;
+    border-radius: 50%;
+    width: 56px;
+}
+
+.caixa-stories .story .background{
+    border-radius: 50%;
+    width: 64px;
+}
+
+.caixa-stories .story p {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.caixa-stories .story ion-icon {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    color: lightslategray;
+    font-size: 29px;
+}
+
+.caixa-posts {
+    width: 614px;
+    margin-top: 24px;
+}
+
+.caixa-posts .post {
+    width: 100%;
+    height: 768px;
+    background-color: white;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB
+}
+
+.caixa-posts .post .topo-post {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 614px;
+    border-bottom: 1px solid #EFEFEF;
+    position: relative;
+}
+
+.caixa-posts .post .topo-post p {
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.caixa-posts .post .topo-post ion-icon {
+    position: absolute;
+    right: 18px;
+}
+
+.caixa-posts .post .topo-post .perfil-story {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.caixa-posts .post .postagem{
+    height: 614px;
+    width: 614px;
+}
+
+.caixa-posts .post .baixo-post .icones {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 614px;
+    font-size: 22px;
+    position: relative;
+}
+
+.caixa-posts .post .baixo-post .icones ion-icon {
+    padding-right: 18px;
+}
+
+.caixa-posts .post .baixo-post .icones ion-icon:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.caixa-posts .post .baixo-post .curtidas {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.caixa-posts .post .baixo-post .curtidas .perfil-curtida {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+@media (max-width: 935px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .barra-fixa .topo {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 614px) {
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .barra-mobile {
+        display: initial;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 54px;
+        border-top: 1px solid black;
+        
+
+    }
+}
