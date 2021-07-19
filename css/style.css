@@ -357,7 +357,7 @@ span {
         display: none;
     }
 
-    .barra-fixa .topo {
+    .barra-fixa .topo-desktop {
         width: 100%;
     }
 
@@ -374,7 +374,7 @@ span {
         width: 100%;
     }
 
-    .barra-fixa .topo {
+    .barra-fixa .topo-desktop {
         display: none;
     }
 
